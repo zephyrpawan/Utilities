@@ -1,15 +1,15 @@
-New Application: 	    ng new app-name                         //  ng new app-name
-Create Component:	    ng generate component component-name    //  ng g c component-name
-Create Directive:	    ng generate directive directive-name    //  ng g d directive-name
-Create Pipe:	        ng generate pipe pipe-name              //  ng g p pipe-name
-Create Service: 	    ng generate service service-name        //  ng g s service-name
-Create Class:   	    ng generate class class-name            //  ng g cl class-name
+New Application:        ng new app-name                         //  ng new app-name
+Create Component:       ng generate component component-name    //  ng g c component-name
+Create Directive:       ng generate directive directive-name    //  ng g d directive-name
+Create Pipe:            ng generate pipe pipe-name              //  ng g p pipe-name
+Create Service:         ng generate service service-name        //  ng g s service-name
+Create Class:           ng generate class class-name            //  ng g cl class-name
 Create Guard:           ng generate guard guard-name            //  ng g g guard-name
-Create Interface:	    ng generate interface interface-name	//  ng g i interface-name
-Create Enum:    	    ng generate enum enum-name              //  ng g e enum-name
-Create Module:  	    ng generate module module-name          //  ng g m module-name
+Create Interface:       ng generate interface interface-name	  //  ng g i interface-name
+Create Enum:            ng generate enum enum-name              //  ng g e enum-name
+Create Module:  	      ng generate module module-name          //  ng g m module-name
 Lint using tslint:	    ng lint	                                //  ng lint
 Build & run unit test:	ng test	                                //  ng test
-Run end to end test:	ng e2e	                                //  ng e2e
+Run end to end test:	  ng e2e	                                //  ng e2e
 
-Compile application to output Dir:	ng build (–dev/–prod)	    //  ng build (–dev/–prod)
+Compile application to output Dir:	ng build (–dev/–prod)	      //  ng build (–dev/–prod)
