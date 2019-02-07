@@ -1,5 +1,5 @@
 New Application:        ng new app-name                         //  ng new app-name
-Create Component:       ng generate component component-name    //  ng g c component-name
+Create Component:       ng generate component component-name    //  ng g c customfolder/component-name
 Create Directive:       ng generate directive directive-name    //  ng g d directive-name
 Create Pipe:            ng generate pipe pipe-name              //  ng g p pipe-name
 Create Service:         ng generate service service-name        //  ng g s service-name
