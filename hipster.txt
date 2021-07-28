@@ -9,3 +9,5 @@ Modify 3
 branch 1 edit
 
 newbranch1
+
+merge commit, no ff
