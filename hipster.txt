@@ -11,3 +11,5 @@ branch 1 edit
 newbranch1
 
 merge commit, no ff
+
+changing on master
