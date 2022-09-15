@@ -1,0 +1,1 @@
+sudo apt-get --purge remove zoom  // uninstalls and removes all config files
