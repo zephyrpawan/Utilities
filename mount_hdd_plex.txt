@@ -1,3 +1,5 @@
+Run sudo blkid to find the UUID of the external Media
+
 #Add below line after running sudo gedit /etc/fstab
 UUID=3E3A9BAB3A9B5EA9 /media/ext_hdd ntfs-3g permissions,auto 0 0
 
