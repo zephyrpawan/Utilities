@@ -1,0 +1,8 @@
+example:
+  property: I AM PROD
+
+spring:
+  datasource:
+    url: jdbc:postgresql://db-prod:5432/organization
+    username: adminuser
+    password: postgrespassword
