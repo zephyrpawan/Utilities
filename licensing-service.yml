@@ -12,6 +12,13 @@ spring:
     testWhileIdle: true
     validationQuery: SELECT 1
 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka/, http://localhost:8071/eureka/, http://localhost:8072/eureka/
+
 sql:
   init:
     mode: always
