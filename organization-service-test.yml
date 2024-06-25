@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db-test:5432/organization_test
+    username: adminuser
+    password: pass

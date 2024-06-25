@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      show-sql: true
+      format-sql: true
+    defer-datasource-initialization: true
+  datasource:
+    platform: postgres
+    testWhileIdle: true
+    validationQuery: SELECT 1
+
+sql:
+  init:
+    mode: always
+
+management:
+  endpoints:
+    web.exposure.include: "*"
+    enabled-by-default: true
+    health.enabled: true
+    health.show-details: always
+  health:
+    db:
+      enabled: true
+    diskspace:
+      enabled: true

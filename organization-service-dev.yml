@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db-dev:5432/organization_dev
+    username: adminuser
+    password: postgrespassword
