@@ -1,2 +1,6 @@
 server:
   port: 8071
+
+eureka:
+  instance:
+    hostname: eureka-server2
