@@ -5,5 +5,5 @@ eureka:
   instance:
     hostname: localhost
   client: 
-    service-url: 
+    serviceUrl: 
       defaultZone: http://localhost:8070/eureka/,http://localhost:8071/eureka/
