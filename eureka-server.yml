@@ -3,6 +3,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      default-Zone: http://eureka-server1:8070/eureka/,http://eureka-server2:8071/eureka/,http://eureka-server3:8072/eureka/
+      default-zone: http://eureka-server1:8070/eureka/,http://eureka-server2:8071/eureka/,http://eureka-server3:8072/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 5
