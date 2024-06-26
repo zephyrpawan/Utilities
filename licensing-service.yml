@@ -17,7 +17,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://eureka-server1:8070/eureka/, http://eureka-server2:8071/eureka/, http://eureka-server3:8072/eureka/
+      defaultZone: http://eureka-server1:8070/eureka/
 
 sql:
   init:
