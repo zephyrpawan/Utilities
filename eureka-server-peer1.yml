@@ -6,4 +6,4 @@ eureka:
     hostname: localhost
   client: 
     service-url: 
-      default-zone: http://localhost:8071/eureka/,http://localhost:8072/eureka/
+      defaultZone: http://localhost:8071/eureka/,http://localhost:8072/eureka/
