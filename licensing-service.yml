@@ -59,7 +59,7 @@ resilience4j.circuitbreaker:
         - java.io.IOException
 #      ignoreExceptions:
   instances:
-    organizationService:
-      baseConfig: default
     licenseService:
+      baseConfig: default
+    organizationService:
       baseConfig: default
