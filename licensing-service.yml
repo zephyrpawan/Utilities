@@ -46,3 +46,8 @@ resilience4j:
     configs:
       default:
         registerHealthIndicator: true
+    instances:
+      organizationService:
+        baseConfig: default
+      licenseService:
+        baseConfig: default
