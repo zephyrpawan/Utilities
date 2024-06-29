@@ -28,9 +28,21 @@ management:
     web.exposure.include: "*"
     enabled-by-default: true
     health.enabled: true
+  endpoint:
+    health.enabled: true
     health.show-details: always
+    metrics.enabled: true
   health:
     db:
       enabled: true
     diskspace:
       enabled: true
+    circuitbreakers:
+      enabled: true
+    ratelimiters:
+      enabled: true
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
