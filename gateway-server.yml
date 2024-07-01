@@ -4,16 +4,16 @@ spring:
       discovery:
         locator: #Enables the gateway to create routes based on services registered with service discovery
           enabled: true
-          lower-case-service-id: true
+          lowerCaseServiceId: true
       routes:
-      - id: ORGANIZATION-SERVICE
+      - id: organization-service
         uri: lb://ORGANIZATION-SERVICE
         predicates:
         - Path=/organization/**
         filters:
         - RewritePath=/organization/?(?<path>.*), /$\{path})
 
-      - id: ORGANIZATION-SERVICE
+      - id: licensing-service
         uri: lb://LICENSING-SERVICE
         predicates:
         - Path=/license/**
