@@ -20,6 +20,10 @@ spring:
         filters:
         - RewritePath=/license/?(?<path>.*), /$\{path})
 
+logging:
+  level:
+    root: DEBUG
+
 server:
   port: 8091
   
