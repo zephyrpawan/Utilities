@@ -1,0 +1,38 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator: #Enables the gateway to create routes based on services registered with service discovery
+          enabled: true
+          lower-case-service-id: true
+
+server:
+  port: 8091
+  
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-server1:8070/eureka/,http://eureka-server2:8071/eureka/,http://eureka-server3:8072/eureka/
+
+management:
+  endpoints:
+    web.exposure.include: "*"
+    enabled-by-default: true
+    health.enabled: true
+  endpoint:
+    health.enabled: true
+    health.show-details: always
+    metrics.enabled: true
+  health:
+    db:
+      enabled: true
+    diskspace:
+      enabled: true
+    circuitbreakers:
+      enabled: true
+    ratelimiters:
+      enabled: true
