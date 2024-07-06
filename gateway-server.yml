@@ -20,26 +20,26 @@ spring:
         filters:
         - RewritePath=/license/(?<path>.*), /$\{path}
 
-      # - id: licensing-service-dynamic
-      #   uri: lb://LICENSING-SERVICE
-      #   predicates:
-      #   - Path=/license-dynamic/**
-      #   filters:
-      #   - RewritePath=/license-dynamic/(?<path>.*), /$\{path}
+      - id: licensing-service-dynamic
+        uri: lb://LICENSING-SERVICE
+        predicates:
+        - Path=/license-dynamic/**
+        filters:
+        - RewritePath=/license-dynamic/(?<path>.*), /$\{path}
 
-      # - id: google
-      #   uri: https://www.google.com
-      #   predicates:
-      #   - Path=/google/**
-      #   filters:
-      #   - RewritePath=/google(?<path>.*), /
+      - id: google
+        uri: https://www.google.com
+        predicates:
+        - Path=/google/**
+        filters:
+        - RewritePath=/google(?<path>.*), /
 
-      # - id: baylor
-      #   uri: https://www.baylor.edu
-      #   predicates:
-      #   - Path=/baylor/**
-      #   filters:
-      #   - RewritePath=/baylor(?<path>.*), /
+      - id: baylor
+        uri: https://www.baylor.edu
+        predicates:
+        - Path=/baylor/**
+        filters:
+        - RewritePath=/baylor(?<path>.*), /
 
 logging:
   level:
