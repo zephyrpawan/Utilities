@@ -28,11 +28,11 @@ spring:
         - RewritePath=/license-dynamic/(?<path>.*), /$\{path}
 
       - id: google
-        uri: https://www.google.com/
+        uri: https://www.google.com
         predicates:
         - Path=/google/**
-        # filters:
-        # - RewritePath=/google/(?<path>.*), /$\{path}
+        filters:
+        - RewritePath=/google/(?<path>.*), ""}
 
 logging:
   level:
