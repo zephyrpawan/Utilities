@@ -20,7 +20,7 @@ spring:
         filters:
         - RewritePath=/license/(?<path>.*), /$\{path}
 
-      - id: licensing-service
+      - id: licensing-service1
         uri: lb://LICENSING-SERVICE
         predicates:
         - Path=/license-dynamic/**
