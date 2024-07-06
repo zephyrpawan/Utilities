@@ -28,18 +28,18 @@ spring:
         - RewritePath=/license-dynamic/(?<path>.*), /$\{path}
 
       - id: google
-        uri: https://www.google.com/
+        uri: https://www.google.com
         predicates:
         - Path=/google/**
         filters:
-        - RewritePath=/google/(?<path>.*), "/"}
+        - RewritePath=/google/(?<path>.*), /}
 
       - id: baylor
-        uri: https://www.baylor.edu/
+        uri: https://www.baylor.edu
         predicates:
         - Path=/baylor/**
         filters:
-        - RewritePath=/baylor/(?<path>.*), "/"}
+        - RewritePath=/baylor/(?<path>.*), /}
 
 logging:
   level:
